@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personnal Information:</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Firstname" required><br>
+                <label for="lname">Last NAme:</label>
+                <input type="text" id="lname" name="lname" placeholder="Lastname" required><br>
+                <label for="fname">Phone number:</label>
+                <input type="tel" name="phone"placeholder="1234-567890" pattern="[0-9]{4}-[0-9]{6}" size="25" required><br>
+                <label for="fname">E-mail:</label>
+                <input type="email" id="mail" name="mail" placeholder="Enter your e-mail" required><br>
+                <label for="fname">Password:</label>
+                <input type="password" id="PWD" name="PWD" placeholder="Enter your Password" required><br>
+            </fieldset>
+        choose from your gender : <br> 
+        <br>
+        <input type="radio" value="male">male <br>
+        <input type="radio" value="female">female <br>
+        <input type="radio" value="others">others <br>
+        select your proffession : <br>
+        <br>
+        <input type="checkbox" value="male">male <br>
+        <input type="checkbox" value="female">female <br>
+        <input type="checkbox" value="others">others <br>
+        <br>
+        Choose your car: <br>
+        <select size="3" multiple>
+            <option value="audi">audi</option>
+            <option value="audi">bmw</option>
+            <option value="audi">mclaren</option>
+            <option value="audi" selected>mercedes</option>
+        </select><br><br><br>
+        <ol style="list-style-type: lower-roman;">
+            <li>wheat</li>
+            <li>maggi</li>
+            <li>rice</li> 
+        </ol>
+        <ul style="list-style-type: square;">
+            <li>wheat</li>
+            <li>maggi</li>
+            <li>rice</li> 
+        </ul>
+        <dl>
+            <dt>HTML</dt>
+            <dd>htmlstands for hyper text markup language used to design and destruct our web page</dd>
+            <dt>CSS</dt>
+            <dd>css stands for cascading stylesheet and this is used to style our webpage</dd>
+        </dl>
+        <textarea cols="30" rows="10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequuntur quos temporibus corrupti quam et autem fugit. Omnis ipsum libero assumenda? Labore quibusdam sit minus. Enim ducimus impedit veniam optio?
+        </textarea><br><br>
+        <input list="cars">
+        <datalist id="cars">
+            <select size="3" multiple>
+                <option value="audi">audi</option>
+                <option value="audi">bmw</option>
+                <option value="audi">mclaren</option>
+                <option value="audi" selected>mercedes</option>
+            </select><br><br><br>
+        </datalist><br>
+        <img src="download.jpg" alt="">
+        <hr>
+        <ul>
+            <li>American breakfast delicacies:</li>
+            <ul>
+                <li>take away dishes</li>
+                <ul>
+                    <li>american sausage</li>
+                    <li>american hot-dog</li>
+                    <ul>
+                        <li>dark sauce</li>
+                        <li>country special sauce</li>
+                    </ul>
+                </ul>
+                <li>Dining dishes</li>
+                <ul>
+                    <li>Baken and fries</li>
+                    <li>fish and ships</li>
+                    <li>american avacado burger</li>
+                </ul>
+            </ul>
+        </ul>
+        <ol>
+           <li type="i">History</li>
+           <ul list-style-type="circle">
+            <li>Mughal empire</li>
+            <li>Britich Empire</li>
+            <ol type="a">
+                <li>Mongol Empire</li>
+                <li>Russian Empire</li>
+            </ol>
+           </ul> 
+           <li type="i">Mathematics</li>
+           <ol>
+            <li>Number System</li>
+            <ul type="square">
+                <li>Ratio and Prorotion</li>
+                <li>Probability</li>
+            </ul>
+            <Li>Differentiation</Li>
+           </ol>
+           <li type="i">Science</li>
+        </ol>
+        <input type="submit"><br>
+        <input type="button" value="try it"><br>
+        <input type="button" value="clear everything"><br>
+    </form>
+    
+</body>
+</html>
